@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/oil.css">
+    <title>油圧メーター</title>
+</head>
+<body>
+    <canvas id="meter"></canvas>
+
+    <!-- 色選択 -->
+    <div id="colorSelectors">
+        <div class="colorSelector">
+            <label for="meterColor">メーターの色:</label>
+            <select id="meterColor"></select>
+        </div>
+        <div class="colorSelector">
+            <label for="bgColor">背景の色:</label>
+            <select id="bgColor"></select>
+        </div>
+    </div>
+
+    <!-- メーターの値 -->
+    <input type="text" id="barInput" value="0" pattern="[0-9]*" placeholder="油圧 (Bar)">
+
+    <script src="js/oil.js"></script>
+</body>
+</html>
