@@ -1,0 +1,42 @@
+body {
+    margin: 20px;
+    text-align: center;
+    font-family: "メイリオ", Meiryo, sans-serif;
+}
+
+#clockContainer {
+    margin-bottom: 20px;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    min-width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#clock img {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#controls {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.radioRow,
+.controlRow {
+    margin: 5px 0;
+}
+
+#setTimeControls {
+    margin-top: 5px;
+}

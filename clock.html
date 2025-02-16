@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>7セグデジタル時計</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <!-- 時計 -->
+    <div id="clockContainer">
+        <div id="clock">
+            <img id="d0" src="images/0.png" alt="0">
+            <img id="d1" src="images/0.png" alt="0">
+            <img id="c1" src="images/colon.png" alt=":">
+            <img id="d2" src="images/0.png" alt="0">
+            <img id="d3" src="images/0.png" alt="0">
+            <img id="c2" src="images/colon.png" alt=":">
+            <img id="d4" src="images/0.png" alt="0">
+            <img id="d5" src="images/0.png" alt="0">
+        </div>
+    </div>
+    <!-- 設定 -->
+    <div id="controls">
+        <div class="radioRow">
+            <!-- ラジオボタン -->
+            <input type="radio" id="current" name="timeMode" checked>
+            <!-- ラベル -->
+            <label for="current">現在時刻</label>
+        </div>
+        <div class="radioRow">
+            <!-- ラジオボタン -->
+            <input type="radio" id="set" name="timeMode">
+            <!-- ラベル -->
+            <label for="set">設定時刻</label>
+            <div id="setTimeControls">
+                <select id="setHour"></select>
+                :
+                <select id="setMinute"></select>
+                :
+                <select id="setSecond"></select>
+            </div>
+        </div>
+        <div class="controlRow">
+            <!-- ラベル -->
+            <label for="bgBrightness">背景色明るさ:</label>
+            <!-- コンボボックス -->
+            <select id="bgBrightness"></select>
+        </div>
+        <div class="controlRow">
+            <!-- ラベル -->
+            <label for="clockBrightness">文字盤明るさ:</label>
+            <!-- コンボボックス -->
+            <select id="clockBrightness"></select>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
